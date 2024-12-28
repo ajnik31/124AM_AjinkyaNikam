@@ -1,0 +1,77 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "name": "Regency",
+      "address": "Satara Road",
+      "email": "RegancyInfo@gmail.com",
+      "services": "Thai + Japanese",
+      "mobile": 8087812332
+    },
+    {
+      "id": "2",
+      "name": "Grand Hayat",
+      "address": "Pune6",
+      "email": "Hayat@gmail.com",
+      "services": "Indian",
+      "mobile": 8087808780
+    },
+    {
+      "id": "4",
+      "name": "Shereton Grand",
+      "address": "Koregaon park",
+      "email": "GrandInfo@gmail.com",
+      "services": "contenental",
+      "mobile": 7020702070
+    }
+  ],
+  "signup": [
+    {
+      "name": "Taj",
+      "email": "TajManagement@gmail.com",
+      "mobile": 9977997799,
+      "password": "password@123",
+      "id": "1"
+    },
+    {
+      "name": "Admin",
+      "email": "Marvellous@gmail.com",
+      "mobile": 7020717020,
+      "password": "Admin@123",
+      "id": "2"
+    },
+    {
+      "id": "9014",
+      "name": "Test",
+      "email": "Test@gmail.com",
+      "mobile": 123123123,
+      "password": "Test124"
+    },
+    {
+      "id": "cfdc",
+      "name": "Ajinkya Nikam",
+      "email": "nikamajinkya31@gmail.com",
+      "mobile": 98988899888,
+      "password": "Naruto@333"
+    },
+    {
+      "id": "c58f",
+      "name": "Nikhil Goratkar",
+      "email": "NikhilGoratkar@gmail.com",
+      "mobile": 9897878787,
+      "password": "Naruo"
+    }
+  ],
+  "contacts": [
+    {
+      "name": "Rahul kotkar",
+      "mobile": 9898989882,
+      "id": "a5c1"
+    },
+    {
+      "name": "Nikhil Goratkar",
+      "mobile": 1231231232,
+      "id": "d3d5"
+    }
+  ]
+}
