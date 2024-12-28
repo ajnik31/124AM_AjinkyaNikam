@@ -23,6 +23,22 @@
       "email": "GrandInfo@gmail.com",
       "services": "contenental",
       "mobile": 7020702070
+    },
+    {
+      "id": "4",
+      "name": "PK ",
+      "address": "DP road",
+      "email": "pk@gmail.com",
+      "services": "Chicken Tandoori",
+      "mobile": 8787667565
+    },
+    {
+      "id": "5",
+      "name": "Burger King",
+      "address": "Camp and KP",
+      "email": "burgerking@gmail.com",
+      "services": "Burger, Rolls",
+      "mobile": 8768768767
     }
   ],
   "signup": [
