@@ -1,0 +1,79 @@
+<div class="position-relative top-0 start-50 translate-middle-x">
+  <h1 class="text-center">Marvellous Infosystems<br>Calculator</h1>
+  <form [formGroup]="calculatorForm">
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <label for="colFormLabel" class="col-sm-10 col-form-label">Number 1</label>
+          <input type="number" class="form-control" formControlName="AdditionNo1">
+        </div>
+        <div class="col-md">
+          <label for="colFormLabel" class="col-sm-10 col-form-label">Number 2</label>
+          <input type="number" class="form-control" formControlName="AdditionNo2">
+        </div>
+        <div class="col-sm-2" style="margin-top: 37px;">
+          <button type="button" class="btn btn-success" style="width:200px" (click)="calculate('Addition')">Addition</button>
+        </div>
+      </div>
+      <div style="margin-top: 20px;" class="row">
+        <h5>{{additionStr}}</h5>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <label for="colFormLabel" class="col-sm-10 col-form-label">Number 1</label>
+          <input type="number" class="form-control" formControlName="SubtractionNo1">
+        </div>
+        <div class="col-md">
+          <label for="colFormLabel" class="col-sm-10 col-form-label">Number 2</label>
+          <input type="number" class="form-control" formControlName="SubtractionNo2">
+        </div>
+        <div class="col-sm-2" style="margin-top: 37px;">
+          <button type="button" class="btn btn-success" style="width:200px"  (click)="calculate('Subtraction')">Subtraction</button>
+        </div>
+      </div>
+      <div style="margin-top: 20px;" class="row">
+        <h5>{{subtractionStr}}</h5>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <label for="colFormLabel" class="col-sm-10 col-form-label">Number 1</label>
+          <input type="number" class="form-control" formControlName="MultiplicationNo1">
+        </div>
+        <div class="col-md">
+          <label for="colFormLabel" class="col-sm-10 col-form-label">Number 2</label>
+          <input type="number" class="form-control" formControlName="MultiplicationNo2">
+        </div>
+        <div class="col-sm-2" style="margin-top: 37px;">
+          <button type="button" class="btn btn-success" style="width:200px"  (click)="calculate('Multiplication')">Multiplication</button>
+        </div>
+      </div>
+      <div style="margin-top: 20px;" class="row">
+        <h5>{{multipleStr}}</h5>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <label for="colFormLabel" class="col-sm-10 col-form-label">Number 1</label>
+          <input type="number" class="form-control" formControlName="DivisionNo1">
+        </div>
+        <div class="col-md">
+          <label for="colFormLabel" class="col-sm-10 col-form-label">Number 2</label>
+          <input type="number" class="form-control" formControlName="DivisionNo2">
+        </div>
+        <div class="col-sm-2" style="margin-top: 37px;">
+          <button type="button" class="btn btn-success" style="width:200px" (click)="calculate('Division')">Division</button>
+        </div>
+      </div>
+      <div style="margin-top: 20px;" class="row">
+        <h5>{{divisionStr}}</h5>
+      </div>
+    </div>
+  </form>
