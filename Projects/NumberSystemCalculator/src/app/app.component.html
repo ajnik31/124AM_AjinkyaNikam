@@ -1,44 +1,45 @@
 
-
+<div class=" background-container">
 <div class="container text-center align-items-center justify-content-center d-flex flex-column mb-12" style="height: 100vh;">
-  <div class="row justify-content-md-center">
-    <h1>
-      Welcome to Number System Conversion Application
-    </h1>
+  <div class="row justify-content-md-center" style="width: 100%;font-weight: 900;">
+    <label class="custom-radio-label" style="font-weight: 700;font-size: 50px;">Welcome to Number System <br>Conversion Application</label>
   </div>
-  <div class="row justify-content-md-center">
-    <div class="col col-lg-4 radio-lg">
-      <label class="custom-radio-label">
-        From - 
+  <div class="row justify-content-md-center" style="width: 100%; margin-top: 50px;margin-bottom: 50px;">
+    <input type="text" class="form-control form-control-lg" placeholder="Enter the value" [(ngModel)]="inputNumber" style="width: 50%;">
+  </div>
+  <div class="row justify-content-md-center" style="width: 100%; margin-bottom: 50px;">
+    <div class="col radio-lg text-end">
+      <label class="custom-radio-label" style="font-weight: 700;font-size: 30px;">
+        From
       </label>
     </div>
-    <div class="col col-lg-4 radio-lg">
+    <div class="col radio-lg">
       <div class="form-check form-check-inline">
-        <input class="form-check-input custom-radio-input" type="radio" name="fromBinary" id="fromBinary">
+        <input class="form-check-input custom-radio-input" type="radio" name="fromBinary" id="fromBinary" value="fromBinary" [(ngModel)]="fromOption">
         <label class="form-check-label custom-radio-label" for="fromBinary">
           Binary
         </label>
       </div>
     </div>
-    <div class="col col-lg-4 radio-lg">
+    <div class="col radio-lg">
       <div class="form-check form-check-inline">
-        <input class="form-check-input custom-radio-input" type="radio" name="fromOctal" id="fromOctal">
+        <input class="form-check-input custom-radio-input" type="radio" name="fromOctal" id="fromOctal"  value="fromOctal" [(ngModel)]="fromOption">
         <label class="form-check-label custom-radio-label" for="fromOctal">
           Octal
         </label>
       </div>
     </div>
-    <div class="col col-lg-4 radio-lg">
+    <div class="col radio-lg">
       <div class="form-check form-check-inline">
-        <input class="form-check-input custom-radio-input" type="radio" name="fromDecimal" id="fromDecimal">
+        <input class="form-check-input custom-radio-input" type="radio" name="fromDecimal" id="fromDecimal" value="fromDecimal" [(ngModel)]="fromOption">
         <label class="form-check-label custom-radio-label" for="fromDecimal">
           Decimal
         </label>
       </div>
     </div>
-    <div class="col col-lg-4 radio-lg">
+    <div class="col radio-lg">
       <div class="form-check form-check-inline">
-        <input class="form-check-input custom-radio-input" type="radio" name="fromHexadecimal" id="fromHexadecimal">
+        <input class="form-check-input custom-radio-input" type="radio" name="fromHexadecimal" id="fromHexadecimal" value="fromHexadecimal" [(ngModel)]="fromOption">
         <label class="form-check-label custom-radio-label" for="fromHexadecimal">
           Hexadecimal
         </label>
@@ -46,43 +47,50 @@
     </div>
   </div>
 
-  <div class="row justify-content-md-center">
-    <div class="col col-lg-4 radio-lg">
-      <label class="custom-radio-label">
-        To - 
+  <div class="row justify-content-md-center" style="width: 100%;">
+    <div class="col radio-lg text-end">
+      <label class="custom-radio-label" style="font-weight: 700;font-size: 30px;">
+        To
       </label>
     </div>
-    <div class="col col-lg-4 radio-lg">
+    <div class="col radio-lg">
       <div class="form-check form-check-inline">
-        <input class="form-check-input custom-radio-input" type="radio" name="toBinary" id="toBinary">
+        <input class="form-check-input custom-radio-input" type="radio" name="toBinary" id="toBinary" value="toBinary" [(ngModel)]="toOption">
         <label class="form-check-label custom-radio-label" for="toBinary">
           Binary
         </label>
       </div>
     </div>
-    <div class="col col-lg-4 radio-lg">
+    <div class="col radio-lg">
       <div class="form-check form-check-inline">
-        <input class="form-check-input custom-radio-input" type="radio" name="toOctal" id="toOctal">
+        <input class="form-check-input custom-radio-input" type="radio" name="toOctal" id="toOctal" value="toOctal" [(ngModel)]="toOption">
         <label class="form-check-label custom-radio-label" for="toOctal">
           Octal
         </label>
       </div>
     </div>
-    <div class="col col-lg-4 radio-lg">
+    <div class="col radio-lg">
       <div class="form-check form-check-inline">
-        <input class="form-check-input custom-radio-input" type="radio" name="toDecimal" id="toDecimal">
+        <input class="form-check-input custom-radio-input" type="radio" name="toDecimal" id="toDecimal" value="toDecimal" [(ngModel)]="toOption">
         <label class="form-check-label custom-radio-label" for="toDecimal">
           Decimal
         </label>
       </div>
     </div>
-    <div class="col col-lg-4 radio-lg">
+    <div class="col radio-lg">
       <div class="form-check form-check-inline">
-        <input class="form-check-input custom-radio-input" type="radio" name="toHexadecimal" id="toHexadecimal">
+        <input class="form-check-input custom-radio-input" type="radio" name="toHexadecimal" id="toHexadecimal" value="toHexadecimal" [(ngModel)]="toOption">
         <label class="form-check-label custom-radio-label" for="toHexadecimal">
           Hexadecimal
         </label>
       </div>
     </div>
   </div>
+  <div class="row justify-content-md-center" style="width: 20%;margin-top: 50px;margin-bottom: 50px;">
+    <button type="submit" class="btn btn-primary btn-lg" (click)="convertValues()">Convert</button>
+  </div>
+  <div class="row justify-content-md-center" style="width: 100%;">
+    <label *ngIf="result" class="custom-radio-label" style="font-weight: 1000;font-size: 50px;">Result - {{result}}</label>
+  </div>
+</div>
 </div>

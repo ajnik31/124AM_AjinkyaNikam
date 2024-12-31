@@ -6,3 +6,12 @@
 .radio-lg .custom-radio-label {
     font-size: 25px;
 }
+
+.background-container {
+    background-image: url('image.jpg');
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    padding: 20px; /* Add some padding */
+    color: white; /* Set text color to white for better visibility */
+}
